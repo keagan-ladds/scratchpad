@@ -1,0 +1,56 @@
+[
+    {
+        "Name": "feature-flag-1",
+        "Definitions": [    
+            {
+                "ProjectName": "project-2",
+                "Location": {
+                    "Path": "feature-flags/feature-flag-1-alt"
+                },
+                "Method": {
+                    "MethodName": "IsFeatureFlagEnabled",
+                    "Location": {
+                        "Path": "feature-flags/feature-flag-1-alt"
+                    },
+                    "Preview": ""
+                },
+                "References": [
+                    {
+                        "FileName": "feature-flag-1-alt",
+                        "Location": {
+                            "Path": "feature-flags/feature-flag-1-alt"
+                        },
+                        "Preview": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "feature-flag-2",
+        "Definitions": [    
+            {
+                "ProjectName": "project-2",
+                "Location": {
+                    "Path": "feature-flags/feature-flag-2"
+                },
+                "Method": {
+                    "MethodName": "IsFeatureFlagEnabled",
+                    "Location": {
+                        "Path": "feature-flags/feature-flag-2"
+                    },
+                    "Preview": ""
+                },
+                "References": [
+                    {
+                        "FileName": "feature-flag-2",
+                        "Location": {
+                            "Path": "feature-flags/feature-flag-2"
+                        },
+                        "Preview": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

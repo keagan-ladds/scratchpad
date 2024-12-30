@@ -1,0 +1,29 @@
+[
+    {
+        "Name": "feature-flag-1",
+        "Definitions": [    
+            {
+                "ProjectName": "project-1",
+                "Location": {
+                    "Path": "feature-flags/feature-flag-1"
+                },
+                "Method": {
+                    "MethodName": "IsfeatureFlagEnabled",
+                    "Location": {
+                        "Path": "feature-flags/feature-flag-1"
+                    },
+                    "Preview": "public bool IsFeatureFlagEnabled()\n{\n    return ConfigurationManager.AppSettings[\"FeatureFlag1\"] == \"true\";\n}"
+                },
+                "References": [
+                    {
+                        "FileName": "feature-flag-1",
+                        "Location": {
+                            "Path": "feature-flags/feature-flag-1"
+                        },
+                        "Preview": ""
+                    }
+                ]
+            }
+        ]
+    }
+]
